@@ -77,6 +77,10 @@ $(function () {
 		var id = $(this).attr('href'),
 			top = $(id).offset().top
 		$('body,html').animate({ scrollTop: top }, 1000)
+		$('.header-top-inner').removeClass('header-top-open')
+		$('.overlay').removeClass('overlay--show')
+		$('.close-btn').removeClass('close')
+		$('.burger').removeClass('active')
 	})
 
 	$('.burger').on('click', function (e) {
